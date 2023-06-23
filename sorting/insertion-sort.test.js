@@ -5,7 +5,9 @@ const insertionSort = (nums = []) => {
 
   for (let i = 1; i <= nums.length - 1; i++) {
     let numberToInsert = nums[i];
-    for (let j = i - 1; nums[j] > numberToInsert && j >= 0; j--) {
+    let j;
+
+    for (j = i - 1; nums[j] > numberToInsert && j >= 0; j--) {
       nums[j + 1] = nums[j];
     }
 
