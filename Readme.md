@@ -1,5 +1,5 @@
-Scribe of Popular Courses on Frontend masters and other platforms
+## DSA Preparation
 
-### Courses Referred
+### Sources Referred
 
-- [Complete Intro to Computer Science](https://frontendmasters.com/courses/computer-science-v2/)
+- [Neetcode.io](https://neetcode.io)
