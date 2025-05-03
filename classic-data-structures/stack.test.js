@@ -12,11 +12,11 @@ class Stack {
     }
 
     print() {
-        let result = ''
+        let result = []
         for (let i = 0; i < this.items.length; i++) {
-            result += this.items[i] + '-'
+            result.push(this.items[i])
         }
-        return result
+        return result.join('-')
     }
 }
 

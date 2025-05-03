@@ -42,11 +42,11 @@ class DynamicArray {
     }
 
     print() {
-        let s = ''
+        let s = []
         for (let i = 0; i < this.length; i++) {
-            s += this.items[i] + ' '
+            s.push(this.items[i])
         }
-        return s;
+        return s.join('-');
     }
 }
 
@@ -59,7 +59,7 @@ describe('Dynamic Array', () => {
     arr.pop()
 
     it('Test', () => {
-        expect(arr.print()).toBe('1 2 ');
+        expect(arr.print()).toBe('1-2');
         expect(arr.capacity).toBe(4);
         expect(arr.length).toBe(2)
         expect(arr.get(1)).toBe(2)

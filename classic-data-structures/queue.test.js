@@ -12,11 +12,11 @@ class Queue {
     }
 
     print() {
-        let result = ''
+        let result = []
         for (let i = 0; i < this.items.length; i++) {
-            result += this.items[i] + '-'
+            result.push(this.items[i])
         }
-        return result
+        return result.join('-')
     }
 }
 
@@ -31,7 +31,7 @@ describe('Queue', () => {
         expect(q.items.length).toBe(3)
         expect(q.dequeue(1)).toBe(2)
         expect(q.items.length).toBe(2)
-        expect(q.print()).toBe('1-3-')
+        expect(q.print()).toBe('1-3')
     })
 
 }) 
