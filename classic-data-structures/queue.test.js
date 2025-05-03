@@ -8,7 +8,15 @@ class Queue {
     }
 
     dequeue(index) {
-        this.items.splice(index, 1)
+        return this.items.splice(index, 1)[0]
+    }
+
+    print() {
+        let result = ''
+        for (let i = 0; i < this.items.length; i++) {
+            result += this.items[i] + '-'
+        }
+        return result
     }
 }
 
@@ -21,8 +29,9 @@ describe('Queue', () => {
         q.enqueue(2)
         q.enqueue(3)
         expect(q.items.length).toBe(3)
-        q.dequeue(1)
+        expect(q.dequeue(1)).toBe(2)
         expect(q.items.length).toBe(2)
+        expect(q.print()).toBe('1-3-')
     })
 
 }) 
