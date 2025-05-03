@@ -1,6 +1,6 @@
 {
-  "name": "datastructures-algorithms-scribe",
-  "version": "0.0.0",
+  "name": "dsa-gym",
+  "version": "1.0.0",
   "scripts": {
     "test": "jest"
   },
