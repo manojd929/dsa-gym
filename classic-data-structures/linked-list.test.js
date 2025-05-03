@@ -24,7 +24,7 @@ class LinkedList {
         current.next = newNode;
     }
 
-    deleteNode (val) {
+    deleteNode(val) {
         if (!this.head) {
             return;
         }
@@ -38,7 +38,6 @@ class LinkedList {
         while (current.next && current.next.value !== val) {
             current = current.next;
         }
-        console.log(val, current.value)
         if (current.next) {
             current.next = current.next.next;
         }
@@ -71,7 +70,7 @@ describe('Linked List', () => {
     ll.insertAtEnd(3)
     ll.insertAtEnd(4)
 
-    it ('Dummy Test', () => {
+    it('Dummy Test', () => {
         expect(ll.print()).toBe('1->2->3->4')
         ll.insertAtFirst(0)
         expect(ll.print()).toBe('0->1->2->3->4')
