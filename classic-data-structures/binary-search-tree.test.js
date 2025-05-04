@@ -52,9 +52,9 @@ class BST {
         }
 
         if (value < node.data) {
-            node.left = this.remove(value, node.left, node)
+            node.left = this.remove(value, node.left)
         } else if (value > node.data) {
-            node.right = this.remove(value, node.right, node)
+            node.right = this.remove(value, node.right)
         } else {
             if (!node.left && !node.right) {
                 return null
