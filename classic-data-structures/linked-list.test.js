@@ -70,7 +70,7 @@ describe('Linked List', () => {
     ll.insertAtEnd(3)
     ll.insertAtEnd(4)
 
-    it('Dummy Test', () => {
+    it('Test', () => {
         expect(ll.print()).toBe('1->2->3->4')
         ll.insertAtFirst(0)
         expect(ll.print()).toBe('0->1->2->3->4')
