@@ -17,7 +17,6 @@ tree.right.right.left = new TreeNode(7)
 tree.right.right.right = new TreeNode(9)
 
 const levelOrderTraversal = (root) => {
-    console.log(root)
     if (!root) {
         return []
     }
